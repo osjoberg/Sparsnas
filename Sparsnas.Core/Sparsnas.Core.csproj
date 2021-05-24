@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Sparsnas.Core</AssemblyName>
+    <PackageId>Sparsnas.Core</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Oskar Sjöberg</Authors>
+    <Company />
+    <Product>Sparsnas.Core</Product>
+  </PropertyGroup>
+
+</Project>

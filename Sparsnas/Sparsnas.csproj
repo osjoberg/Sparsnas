@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<AssemblyName>Sparsnas</AssemblyName>
+		<PackageId>Sparsnas</PackageId>
+		<Authors>Sparsnas</Authors>
+		<Product>Sparsnas</Product>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Sparsnas.Core\Sparsnas.Core.csproj" />
+	</ItemGroup>
+
+
+</Project>
