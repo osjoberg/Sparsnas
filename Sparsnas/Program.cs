@@ -72,12 +72,12 @@ namespace Sparsnas
         {
             WriteLine("Get current and total power usage from Sparsnas sensors.");
             WriteLine();
-            WriteLine("SPARSNAS -tune");
-            WriteLine("SPARSNAS -f1 <frequency> -s <sensor id>/<pulses per kwh>");
+            WriteLine("SPARSNAS /tune");
+            WriteLine("SPARSNAS /f1 <frequency> /s <sensor id>/<pulses per kWh>");
             WriteLine();
             WriteLine("/tune    Tune to find best f1 frequency.");
             WriteLine("/f1      Use f1 frequency <frequency>.");
-            WriteLine("/s       Use senor <sensor id> with <pulses per kwh> number of pulses per kwh.");
+            WriteLine("/s       Use senor <sensor id> with <pulses per kwh> number of pulses per kWh.");
             WriteLine("         Six digit sensor is located in the battery compartment (400xxxxxx).");
             WriteLine("         Multiple sensors can be specified by using multiple -s switches.");
 
