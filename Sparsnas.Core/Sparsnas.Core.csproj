@@ -4,10 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>Sparsnas.Core</AssemblyName>
     <PackageId>Sparsnas</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Oskar Sjöberg</Authors>
     <Company />
     <Product>Sparsnas.Core</Product>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
   </PropertyGroup>
 
 </Project>

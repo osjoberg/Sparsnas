@@ -3,10 +3,13 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net5.0</TargetFramework>
-		<AssemblyName>Sparsnas</AssemblyName>
+		<AssemblyName>Sparsnas.Console</AssemblyName>
 		<PackageId>Sparsnas.Console</PackageId>
 		<Authors>Sparsnas</Authors>
-		<Product>Sparsnas</Product>
+		<Product>Sparsnas.Console</Product>
+		<AssemblyVersion>0.2.0.0</AssemblyVersion>
+		<FileVersion>0.2.0.0</FileVersion>
+		<RootNamespace>Sparsnas.Console</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
