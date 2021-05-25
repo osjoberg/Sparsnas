@@ -54,7 +54,7 @@ namespace Sparsnas
 
             if (buffer[0] != 0x11 || buffer[3] != 0x07 || buffer[4] != 0x0e && buffer[4] != 0x0f)
             {
-                var packetString = string.Concat(Enumerable.Range(0, 18).Select(index => buffer[index].ToString("X2")));
+                var packetString = string.Concat(buffer.Select(b => b.ToString("X2")));
                 throw new FormatException($"Bad packet: {packetString}.");
             }
 
