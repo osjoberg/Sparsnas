@@ -58,7 +58,6 @@ namespace Sparsnas
                 }
 
                 var packet = sensors.Select(s => Packet.Decrypt(s.SensorId, buffer)).FirstOrDefault(p => p != null);
-
                 if (packet == null)
                 {
                     continue;
@@ -67,8 +66,8 @@ namespace Sparsnas
                 var sensor = sensors.Single(s => s.SensorId == packet.SensorId);
                 sensor.LastResponse = now;
 
-                var currentPowerUsageW = packet.GetCurrentPowerUsageW(2000);
-                var totalPowerUsageW = packet.GetTotalPowerUsageW(2000);
+                var currentPowerUsageW = packet.GetCurrentPowerUsageW(sensor.PulsesPerKwh);
+                var totalPowerUsageW = packet.GetTotalPowerUsageW(sensor.PulsesPerKwh);
 
                 var status = packet.PulseError ? "PULSE ERR" : "OK";
 
