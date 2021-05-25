@@ -4,7 +4,7 @@
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net5.0</TargetFramework>
 		<AssemblyName>Sparsnas</AssemblyName>
-		<PackageId>Sparsnas</PackageId>
+		<PackageId>Sparsnas.Console</PackageId>
 		<Authors>Sparsnas</Authors>
 		<Product>Sparsnas</Product>
 	</PropertyGroup>

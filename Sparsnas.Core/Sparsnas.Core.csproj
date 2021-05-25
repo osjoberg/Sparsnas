@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>Sparsnas.Core</AssemblyName>
-    <PackageId>Sparsnas.Core</PackageId>
+    <PackageId>Sparsnas</PackageId>
     <Version>0.1.0</Version>
     <Authors>Oskar Sjöberg</Authors>
     <Company />
