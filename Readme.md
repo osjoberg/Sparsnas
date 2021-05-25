@@ -3,11 +3,12 @@ Monitor power usage from IKEA Sparsnas sensors using an RTL-SDR dongle. Based on
 
 Features
 - Supports multiple IKEA Sparsnas sensors simultaneously.
-- Idles while not receiving packets which makes it use less resources.
-- Can be used without recompiling the source.
-- Fixes an issue in the original code which does not take pulses per kWh into account
+- Idles while not receiving packets which makes it use less CPU.
+- Can be used directly from the command line without re-compiling the source code.
+- Interfaces the reciver directly throgh the RTL-SDR library.
+- Fixes an issue in the original code which does not take pulses per kWh into account if anything else than 1000.
 
-Requires .net framework 5.0.
+Requires .NET Framework 5.0.
 
 ## Command line version
 Version 0.1 can be downloaded from here:
