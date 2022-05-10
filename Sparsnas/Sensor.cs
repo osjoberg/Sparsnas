@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sparsnas
+namespace Sparsnas.Console
 {
     internal class Sensor
     {

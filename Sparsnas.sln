@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparsnas.Core", "Sparsnas.Core\Sparsnas.Core.csproj", "{F1889E29-0CC0-4579-8C79-9D966F82D88A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparsnas", "Sparsnas.Core\Sparsnas.csproj", "{F1889E29-0CC0-4579-8C79-9D966F82D88A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparsnas", "Sparsnas\Sparsnas.csproj", "{CB3C8DB0-E6F6-4305-B426-FFE42B9C7896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparsnas.Console", "Sparsnas\Sparsnas.Console.csproj", "{CB3C8DB0-E6F6-4305-B426-FFE42B9C7896}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{3B7CD188-59C2-44FD-B9F2-CE93F04D4B67}"
 	ProjectSection(SolutionItems) = preProject

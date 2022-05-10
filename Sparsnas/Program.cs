@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using static System.Console;
 
-namespace Sparsnas
+namespace Sparsnas.Console
 {
     internal static class Program
     {
@@ -79,7 +79,7 @@ namespace Sparsnas
             WriteLine("/f1      Use f1 frequency <frequency>.");
             WriteLine("/s       Use senor <sensor id> with <pulses per kwh> number of pulses per kWh.");
             WriteLine("         Six digit sensor is located in the battery compartment (400xxxxxx).");
-            WriteLine("         Multiple sensors can be specified by using multiple -s switches.");
+            WriteLine("         Multiple sensors can be specified by using multiple /s switches.");
 
             if (errorMessage != null)
             {

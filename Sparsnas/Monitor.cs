@@ -5,7 +5,7 @@ using System.Threading;
 
 using static System.Console;
 
-namespace Sparsnas
+namespace Sparsnas.Console
 {
     internal class Monitor
     {
