@@ -14,7 +14,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Sparsnas.Core\Sparsnas.csproj" />
+	  <ProjectReference Include="..\Sparsnas\Sparsnas.csproj" />
 	</ItemGroup>
 
 
