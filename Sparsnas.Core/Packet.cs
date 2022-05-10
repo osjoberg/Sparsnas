@@ -86,7 +86,7 @@ namespace Sparsnas
             return 3600000 / pulsesPerKwh * 1024 / AveragePulseLength;
         }
 
-        public int GetTotalPowerUsageW(int pulsesPerKwh)
+        public int GetTotalPowerUsageWh(int pulsesPerKwh)
         {
             return TotalPulseCount * 1000 / pulsesPerKwh;
         }

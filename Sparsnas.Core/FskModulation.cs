@@ -45,27 +45,6 @@ namespace Sparsnas
 
             var sampleCount = samples.Length / 2;
 
-            /*if (j - lastSigTime > (int)(200 * PerfectPulseLen))
-            {
-                // inject some trailing bits
-                for (var i = 0; i < 100; i++)
-                {
-                    bitStream.AddBit(lastSignal);
-                }
-
-                if (bitStream.Length >= 160)
-                {
-                    var result = bitStream.GetBuffer();
-                    averageError = avgErr;
-                    avgErr = 0;
-                    bitStream.Clear();
-                    return result;
-                }
-
-                avgErr = 0;
-                bitStream.Clear();
-            }*/
-
             for (var sampleIndex = 0; sampleIndex < sampleCount; sampleIndex++, position++)
             {
                 var v = new Complex(samples[sampleIndex * 2 + 0] - 128, samples[sampleIndex * 2 + 1] - 128);

@@ -67,11 +67,11 @@ namespace Sparsnas
                 sensor.LastResponse = now;
 
                 var currentPowerUsageW = packet.GetCurrentPowerUsageW(sensor.PulsesPerKwh);
-                var totalPowerUsageW = packet.GetTotalPowerUsageW(sensor.PulsesPerKwh);
+                var totalPowerUsageWh = packet.GetTotalPowerUsageWh(sensor.PulsesPerKwh);
 
                 var status = packet.PulseError ? "PULSE ERR" : "OK";
 
-                WriteLine(FormattableString.Invariant($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} {status,-9} {packet.SensorId:000000} {packet.Sequence,5} {currentPowerUsageW,7:0.0} {totalPowerUsageW / 1000,7}.{totalPowerUsageW % 1000:000} {packet.BatteryPercentage,9} {bitStream.AverageError,6:0.00}"));
+                WriteLine(FormattableString.Invariant($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} {status,-9} {packet.SensorId:000000} {packet.Sequence,5} {currentPowerUsageW,7:0.0} {totalPowerUsageWh / 1000,7}.{totalPowerUsageWh % 1000:000} {packet.BatteryPercentage,9} {bitStream.AverageError,6:0.00}"));
 
                 var missingSensors = sensors.Where(s => now - s.LastResponse > new TimeSpan(0, 0, 16));
                 sleepTo = missingSensors.Any() ? DateTime.MinValue : DateTime.UtcNow.Add(sensors.Min(s => s.LastResponse.AddSeconds(14.5) - now));

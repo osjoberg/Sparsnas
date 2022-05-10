@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Sparsnas": {
+      "commandName": "Project",
+      "commandLineArgs": "-f1 -6500 -s 599676/2000"
+    }
+  }
+}
